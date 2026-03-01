@@ -1,0 +1,8 @@
+---
+title: "Homework-03"
+author: "Yaasiel Leos Ledesma"
+format: html
+editor: visual
+date: 2026-02-28 
+---
+
