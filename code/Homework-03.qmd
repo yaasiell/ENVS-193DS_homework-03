@@ -54,6 +54,47 @@ ggplot(data = salinity, # calls for salinity data set
   ) +
   theme_get() # changes theme different from the default 
 
+```
 
+## c. Check your assumptions and run your test
+
+### Checking Assumptions
+```{r}
+#| label: Plot to check salinity assumptions
+# Histogram of soil salinity distribution
+ggplot(data =salinity, # calls for salinity data set
+       aes(x = salinity_mS_cm,)) + # assigns salinity data column to x-axis
+  geom_histogram(fill = "lightpink1", # calls for data as histogram using "fill()" to color them
+                 color = "hotpink1", # colors the outline of the histogram boxes
+                 bins = 8) + # groups data into bins of 8 data points 
+  labs(x = "Soil Salinity (mS/cm)", # calls for labels and x-axis title
+       y = "Count", # y-axis title
+       title = "Soil Salinity Histogram Distribution") + # title of the graph
+  theme_classic()
+```
+
+```{r}
+#| label: Plot to check pickleweed distribution
+# Histogram to check distribution of pickleweed data
+ggplot(data = salinity, # calls for salinity data set
+       aes(x = pickleweed, # assigns data from pickleweed to x-axis
+           )) +
+  geom_histogram(fill = "darkgreen", # assigns data points into a histogram and colors them 
+                 color = "green4", # color for the histogram outline
+                 bins = 8) + # assigns data into bins 
+  labs(x = "Pickleweed biomass (g)", # label for x-axis
+       y = "Count", # label for y-axis graph
+       # label for the title of the histogram
+       title = "Pickleweed biomass Histogram Distribution ") +
+  theme_classic() # cahnges the theme to a classic look
+```
+[For this section I checked the assumptions of normal distribution and a linear relationship. I checked these assumptions by creating histograms and scatter plots to see if there was a linear relationship between salinity variables and if the data was normally distributed through a histogram. The scatter plot does shows that there could be a linear relationship between soil salinity and biomass, and the histogram shows that the distribution is normal by having an overall bell shape with no extreme variation making Person's correlation the best test.  ] 
+
+### Running Test 
+```{r}
+#| label: Pearson correlation Test
+
+cor.test(salinity$salinity_mS_cm, salinity$pickleweed,
+         method = "pearson")
 ```
 
