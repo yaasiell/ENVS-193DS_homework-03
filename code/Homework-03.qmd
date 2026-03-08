@@ -36,3 +36,24 @@ my_data_skateboard <- read.csv(here("data","updated_skateboard.csv")) |>
 
 [The appropriate tests to determine the strength of the relationship between salinity and California pickle weed biomass would be the Pearson's correlation and Spearman's rank correlation. Pearson's correlation differs because it is used when two continuous variables have a linear relationship and are normally distributed with the data meeting its assumptions of normality and independence. Spearman's correlations is different because it is non-parametric and based on ranks that is more helpful in a monotonic relationship between variables instead of a linear relationship. ]
 
+## b. Create a visualization
+
+```{r}
+#| label: Creating a visualization for relationship between salinity and pickleweed biomass
+# create a visualization for the relationship between salinity and pickleweed mass
+ggplot(data = salinity, # calls for salinity data set
+       aes(x = salinity_mS_cm, # calls for assigning salinity column data to x-axis
+           y = pickleweed # calls for assigning pickle weed column data to y-axis
+           )) +
+  geom_point(color = "dodgerblue3", # plot data as points and change color
+             size = 3) + # change the size for each data point
+  labs(x = "Soil Salinity (mS/cm)", # call for labels and names x-axis with measurements
+       y = "Pickelweed biomass (g)", # label for y-axis with measurements
+       #label for title of the graph
+       title = "Relationship between Pickleweed biomass and Soil Salinity" 
+  ) +
+  theme_get() # changes theme different from the default 
+
+
+```
+
