@@ -1,0 +1,40 @@
+Date,Day of Week ,Start Time(HH:MM),From-To,Skate Time (Minutes),Distance (Miles),Crowding Level,Backpack Load
+2026-01-26,Monday,10:46,parking lot 22-Buchanan Hall,8,0.6,medium,low
+2026-01-26,Monday,3:16,Cambell Hall-IV Theatre ,11,0.8,high,medium
+2026-01-27,Tuesday,10:52,parking lot 22-HSSB,4,0.3,low,low
+2026-01-28,Wednesday,10:48,parking lot 22-Buchanan Hall,9,0.6,high,low
+2026-01-29,Thursday,12:15,parking lot 22-Building 387,8,0.5,medium,medium
+2026-01-30,Friday,12:55,HSSB-parking lot 22,5,0.3,low,low
+2026-02-02,Monday,10:53,parking lot 18-Buchanan Hall,5,0.4,low,low
+2026-02-02,Monday,12:07,Buchanan Hall-parking lot 18,7,0.4,low,low
+2026-02-02,Monday,1:46,parking lot 22-Cambell Hall,9,0.5,high,low
+2026-02-02,Monday,3:10,Cambell hall-IV Theatre ,11,0.8,medium,low
+2026-02-03,Tuesday ,11:51,parking lot 22-HSSB,4,0.3,low,low
+2026-02-03,Tuesday ,12:19,parking lot 22-Building 387,5,0.5,high,low
+2026-02-04,Wednesday,10:45,parking lot 22-Buchanan Hall,8,0.6,high,low
+2026-02-05,Friday,8:53,parking lot 22-HSSB,4,0.3,medium,high
+2026-02-09,Monday ,10:52,parking lot 18-Buchanan Hall,3,0.4,low,low
+2026-02-09,Monday ,1:43,parking lot  22-Cambell Hall,8,0.5,medium,medium
+2026-02-09,Monday ,3:15,Cambell hall-IV Theatre ,11,0.8,high,medium
+2026-02-10,Tuesday ,10:50,parking lot 22-HSSB,4,0.3,low,low
+2026-02-11,Wednesday ,10:45,parking lot 22-Buchanan Hall,8,0.6,medium,low
+2026-02-11,Wednesday ,1:43,parking lot  22-Cambell Hall,8,0.5,medium,medium
+2026-02-12,Thursday ,12:20,parking lot 22-Building 387,5,0.5,high,low
+2026-02-17,Tuesday ,12:19,parking lot 22-Building 387,5,0.5,medium,low
+2026-02-18,Wednesday,10:45,parking lot 22-Buchanan Hall,7,0.6,high,medium
+2026-02-18,Wednesday,1:40,parking lot  22-Cambell Hall,9,0.5,high,low
+2026-02-18,Wednesday,3:10,Cambell hall-IV Theatre ,13,0.8,high,medium
+2026-02-19,Thursday,12:21,parking lot 22-Building 387,7,0.5,high,low
+2026-02-20,Friday,12:50,parking lot 22-HSSB,5,0.3,low,low
+2026-02-23,Monday,10:54,parking lot 18-Buchanan Hall,4,0.4,low,low
+2026-02-23,Monday,1:43,parking lot  22-Cambell Hall,9,0.5,medium,medium
+2026-02-23,Monday,3:09,Cambell hall-IV Theatre ,12,0.8,high,medium
+2026-02-25,Wednesday ,11:45,parking lot 22-Buchanan Hall,9,0.6,high,low
+2026-02-25,Wednesday ,1:42,parking lot  22-Cambell Hall,10,0.5,high,medium
+2026-02-25,Wednesday ,3:12,Cambell hall-IV Theatre ,12,0.8,high,low
+2026-02-26,Thursday ,12:18,parking lot 22-Building 387,7,0.5,medium,low
+2026-02-27,Friday,11:51,parking lot 22-HSSB,5,0.3,low,low
+2026-03-02,Monday,10:55,parking lot 18-Buchanan Hall,4,0.4,low,low
+2026-03-02,Monday,3:13,Cambell hall-IV Theatre ,10,0.8,high,medium
+2026-03-03,Tuesday ,10:53,parking lot 22-HSSB,5,0.3,medium,medium
+2026-03-03,Tuesday ,12:18,parking lot 22-Building 387,6,0.5,high,medium

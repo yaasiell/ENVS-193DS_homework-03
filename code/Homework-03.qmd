@@ -5,6 +5,7 @@ format: html
 editor: visual
 date: 2026-02-28 
 ---
+
 [GitHub Repository](https://github.com/yaasiell/ENVS-193DS_homework-03.git)
 
 ```{r}
@@ -14,11 +15,24 @@ date: 2026-02-28
 # Loading in required packages
 library (tidyverse) # data wrangling and plotting
 library(here) # direct file paths to call from
-library(janitor) # examine and clean data
+library(janitor) # to examine and read in data
 library(readxl) # reads excel files
 
 # create new object called salinity to call from our data file
 salinity <- read.csv(here("data",
                      "salinity-pickleweed.csv"))
+# my_data_commute as new object for my logged commute data
+my_data_commute <- read.csv(here("data","updated_commute.csv")) |>
+clean_names() # cleans column names to be used in ggplot
+
+# my_data_skateboard as new object for my logged skateboard
+my_data_skateboard <- read.csv(here("data","updated_skateboard.csv")) |>
+  clean_names() # cleans skateboard data columns to correct format
 ```
+
+# Problem 1. Slough soil salinity
+
+## a. An appropriate test
+
+[The appropriate tests to determine the strength of the relationship between salinity and California pickle weed biomass would be the Pearson's correlation and Spearman's rank correlation. Pearson's correlation differs because it is used when two continuous variables have a linear relationship and are normally distributed with the data meeting its assumptions of normality and independence. Spearman's correlations is different because it is non-parametric and based on ranks that is more helpful in a monotonic relationship between variables instead of a linear relationship. ]
 
