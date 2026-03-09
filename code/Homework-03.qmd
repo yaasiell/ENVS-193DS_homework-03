@@ -111,4 +111,20 @@ cor.test(
 
 ## e. Test implications
 
-[The results suggest that pickleweed biomass increases as soil salinity increases. For restoration planting, these results shows that pickleweed may grow more successfully in areas with higher salinity along the slough. To maximize planting success, the restoration site efforts should focus on prioritizing planting pickleweed in locations with higher salinity. ]
+\[The results suggest that pickleweed biomass increases as soil salinity increases. For restoration planting, these results shows that pickleweed may grow more successfully in areas with higher salinity along the slough. To maximize planting success, the restoration site efforts should focus on prioritizing planting pickleweed in locations with higher salinity. \]
+
+## f. Double check your own work
+
+```{r}
+#| label: Spearmans Rank Correlation Test
+# Spearmans Rank Correlation Test
+# run a non-parametric correlation test measuring strenght of 
+# monotonic relationship of ranked data
+cor.test( # "cor.test()" calls for test association between two variables
+  salinity$salinity_mS_cm,  # "data set$variable"
+  salinity$pickleweed,  # "data set$variable"
+  method = "spearman" # specifically calls for Spearman test to be ran.
+)
+```
+
+\[I ran a Spearmans Rank correlation test as non-paramtetric rank alternative compared to Pearsons correlation that evaluated the relationsip between pickleweed mass and soil salinity and showed a moderate relationship (Spearman $\rho = 0.59$, S = 824, p = 0.01, $\alpha = 0.05$) which was similar to the Pearson correlation results (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). Both tests would lead to the same decision about the null hypothesis that there is no relationship between both variables and shows the relationship that as pickleweed biomass increases as soil salinity increases.   \]
