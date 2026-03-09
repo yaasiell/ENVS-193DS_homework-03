@@ -202,7 +202,7 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 ## c. Make a draft of your visualization.
 
-![](../data/affective_visualization_draft.jpg)
+![](../data/affective_visualization_draft.jpg){width=70%}
 
 ## d. Write an artist statement
 
@@ -218,7 +218,7 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 \[The authors for this study used many different types of statistical tests such as the ANOVA/MANOVA, Fisher's F-test and the Krushkal-Wallis test to evaluate if different workout supplements and diet types had an effect on resistance training. The response variable measured in this study was the muscular strength in a one repetition maximum (kg). The predictor variable was the different supplement groups such as whey protein, creatine, L-cartinine, and a combination of all supplements, and a control group with no supplements. The figure included shows the results of the strenght gained and the different suppliment groups.\]
 
-![](../data/statistical_critique_data.png)
+![](../data/statistical_critique_data.png){width=70%}
 
 ## b. Visual clarity
 
