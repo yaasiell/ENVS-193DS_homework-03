@@ -188,12 +188,13 @@ ggplot(data = my_data_skateboard_m,
 
 \[Figure 1. Commute Plot: Shows commute time from Oxnard to UCSB across the days of the week separated by the time of day (morning vs. afternoon). Morning commutes ranged from 60-90 minutes while the afternoon commutes varied more with one longer commute. This figure highlights how commute times could vary depending on both the day of the week and morning or afternoon departure time.
 
-Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus across weekdays. Each point is represented by an individual observation and each day has its own boxplot to represent the overall distribution of skate time between weekday. Skate time would vary greatly based on the day with a tighter cluster of points on friday and a larger spread of points on Monday. Wednesday being the most time skated of all weekdays.\] 
+Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus across weekdays. Each point is represented by an individual observation and each day has its own boxplot to represent the overall distribution of skate time between weekday. Skate time would vary greatly based on the day with a tighter cluster of points on friday and a larger spread of points on Monday. Wednesday being the most time skated of all weekdays.\]
 
 # Problem 3. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
-
+[An affective visualization that I would be interested in for my personal data would be to do a digital art work that I would create by hand based on the different variables I was able to record for my commute data. I wanted to blend a bit of the "Dear Data" website minimalist hand drawn art work by representing shapes as data points and colors as categorical variables trying to blend in as much as the variables I could organize neatly into my artwork.I also really liked the Environmental graphiti on how they blended a few different colors to hopefully make it more abstract as well. I hope to represent colors of what the weather conditions were like for the data points such as using a yellow-orange blend for sunny conditions and a gray color blend for cloudy conditions.
+]
 ## b. Create a sketch (on paper) of your idea
 
 ## c. Make a draft of your visualization.
@@ -202,7 +203,7 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 ## e. Prep your materials to share to class.
 
-#Problem 4. Statistical critique
+# Problem 4. Statistical critique
 
 ## a. Revisit and summarize
 
