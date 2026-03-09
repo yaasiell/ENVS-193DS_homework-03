@@ -19,4 +19,4 @@ The code in the .qmd file loads packages in, imports my personal dataset and pic
 
 ## Rendered output
 
-The rendered output for the homework 3 assignment is found here
+The rendered output for the homework 3 assignment is found [here](https://yaasiell.github.io/ENVS-193DS_homework-03/code/Homework-03.html)
