@@ -193,17 +193,20 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 # Problem 3. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
-[An affective visualization that I would be interested in for my personal data would be to do a digital art work that I would create by hand based on the different variables I was able to record for my commute data. I wanted to blend a bit of the "Dear Data" website minimalist hand drawn art work by representing shapes as data points and colors as categorical variables trying to blend in as much as the variables I could organize neatly into my artwork.I also really liked the Environmental graphiti on how they blended a few different colors to hopefully make it more abstract as well. I hope to represent colors of what the weather conditions were like for the data points such as using a yellow-orange blend for sunny conditions and a gray color blend for cloudy conditions.
-]
+
+\[An affective visualization that I would be interested in for my personal data would be to do a digital art work that I would create by hand based on the different variables I was able to record for my commute data. I wanted to blend a bit of the "Dear Data" website minimalist hand drawn art work by representing shapes as data points and colors as categorical variables trying to blend in as much as the variables I could organize neatly into my artwork.I also really liked the Environmental graphiti on how they blended a few different colors to hopefully make it more abstract as well. I hope to represent colors of what the weather conditions were like for the data points such as using a yellow-orange blend for sunny conditions and a gray color blend for cloudy conditions.\]
+
 ## b. Create a sketch (on paper) of your idea
 
 ![](../data/personal_data_sketch.jpg)
+
 ## c. Make a draft of your visualization.
 
-
+![](../data/affective_visualization_draft.jpg)
 
 ## d. Write an artist statement
 
+[]
 ## e. Prep your materials to share to class.
 
 # Problem 4. Statistical critique
