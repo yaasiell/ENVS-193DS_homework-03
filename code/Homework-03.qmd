@@ -108,3 +108,7 @@ cor.test(
 ## d. Results communication
 
 \[To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Pearson correlation test. The test was used because both pickleweed biomass (g) and soil salinity (mS/cm) are continuous variables and can test the strength of the linear relationship of both uisng this test. The test showed a moderate relationship between soil salinity and biomass (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). This data would suggest that pickleweed biomass would tend to increase as soil salinity increases suggesting that higher salinity could support more growth in pickleweed plants. \]
+
+## e. Test implications
+
+[The results suggest that pickleweed biomass increases as soil salinity increases. For restoration planting, these results shows that pickleweed may grow more successfully in areas with higher salinity along the slough. To maximize planting success, the restoration site efforts should focus on prioritizing planting pickleweed in locations with higher salinity. ]
