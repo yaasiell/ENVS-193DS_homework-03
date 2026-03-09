@@ -206,7 +206,8 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 ## d. Write an artist statement
 
-[]
+[This drawing would visualize and emphasize how frequently I commute by representing commute time as waves in which the length reflect how long each commute took. The waves are colored differently depending on traffic levels, and weather conditions represented as color with the waves in that space showing how many times I drove in those conditions and to show what the day looked like. I was influenced by “Dear Data” project because it transformed personal daily data into a visual patterns. The visualization will be hand drawn digitally through Procreate possibly using a watercolor effect. My process involved experimenting with the variables I recorded to attempt to make them easier to visualize with color and detailed figures. Sharper zig-zag lines would represent the alternate or main road variables.]
+
 ## e. Prep your materials to share to class.
 
 # Problem 4. Statistical critique
