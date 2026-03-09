@@ -198,7 +198,7 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 ## b. Create a sketch (on paper) of your idea
 
-![](../data/personal_data_sketch.jpg)
+![](../data/personal_data_sketch.jpg){width=70%}
 
 ## c. Make a draft of your visualization.
 
