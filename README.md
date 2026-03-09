@@ -7,7 +7,7 @@ This repo has my homework 3 submission for ENV S 193DS
 The assignment was composed of 4 problems : Slough soil salinity, Personal Data,
 Affective visualization and Statistical critique
 
-##Data and File Information
+## Data and File Information
 
 What files are there?
 All code files are in the code folder. The homework submission was written in a Quarto document called Homework-03.
