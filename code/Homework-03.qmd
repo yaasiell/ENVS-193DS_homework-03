@@ -222,6 +222,9 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 ## b. Visual clarity
 
-## c. Aesthetic clarity
+[The figures presented by the authors show clear figure visualization using box plots to separate into supplement groups and diet groups for each graph. The x-axis represent the supplement groups, and the y-axis represents the measured one repetition maximum for each data point with clearly labeled values such as (kg) and proper labels. The box plot included helped represent the data by being able to compare median distribution across different supplement groups and diet groups.The author also included p-values above the box plots to represent diffreneces for each group by the Krushkal-Wallis test. ]
 
+
+## c. Aesthetic clarity
+[]
 ## d. Recommendations
