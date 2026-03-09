@@ -20,7 +20,7 @@ library(readxl) # reads excel files
 
 # create new object called salinity to call from our data file
 salinity <- read.csv(here("data",
-                     "salinity-pickleweed.csv"))
+                     "salinity-pickleweed.csv")) 
 # my_data_commute as new object for my logged commute data
 my_data_commute <- read.csv(here("data","updated_commute.csv")) |>
 clean_names() # cleans column names to be used in ggplot
@@ -34,7 +34,7 @@ my_data_skateboard <- read.csv(here("data","updated_skateboard.csv")) |>
 
 ## a. An appropriate test
 
-[The appropriate tests to determine the strength of the relationship between salinity and California pickle weed biomass would be the Pearson's correlation and Spearman's rank correlation. Pearson's correlation differs because it is used when two continuous variables have a linear relationship and are normally distributed with the data meeting its assumptions of normality and independence. Spearman's correlations is different because it is non-parametric and based on ranks that is more helpful in a monotonic relationship between variables instead of a linear relationship. ]
+\[The appropriate tests to determine the strength of the relationship between salinity and California pickle weed biomass would be the Pearson's correlation and Spearman's rank correlation. Pearson's correlation differs because it is used when two continuous variables have a linear relationship and are normally distributed with the data meeting its assumptions of normality and independence. Spearman's correlations is different because it is non-parametric and based on ranks that is more helpful in a monotonic relationship between variables instead of a linear relationship. \]
 
 ## b. Create a visualization
 
@@ -59,6 +59,7 @@ ggplot(data = salinity, # calls for salinity data set
 ## c. Check your assumptions and run your test
 
 ### Checking Assumptions
+
 ```{r}
 #| label: Plot to check salinity assumptions
 # Histogram of soil salinity distribution
@@ -86,15 +87,24 @@ ggplot(data = salinity, # calls for salinity data set
        y = "Count", # label for y-axis graph
        # label for the title of the histogram
        title = "Pickleweed biomass Histogram Distribution ") +
-  theme_classic() # cahnges the theme to a classic look
+  theme_classic() # changes the theme to a classic look
 ```
-[For this section I checked the assumptions of normal distribution and a linear relationship. I checked these assumptions by creating histograms and scatter plots to see if there was a linear relationship between salinity variables and if the data was normally distributed through a histogram. The scatter plot does shows that there could be a linear relationship between soil salinity and biomass, and the histogram shows that the distribution is normal by having an overall bell shape with no extreme variation making Person's correlation the best test.  ] 
 
-### Running Test 
+\[For this section I checked the assumptions of normal distribution and a linear relationship. I checked these assumptions by creating histograms and scatter plots to see if there was a linear relationship between salinity variables and if the data was normally distributed through a histogram. The scatter plot does shows that there could be a linear relationship between soil salinity and biomass, and the histogram shows that the distribution is normal by having an overall bell shape with no extreme variation making Person's correlation the best test. \]
+
+### Running Test
+
 ```{r}
 #| label: Pearson correlation Test
-
-cor.test(salinity$salinity_mS_cm, salinity$pickleweed,
-         method = "pearson")
+# Pearson Correlation Test to evaluate strength of linear 
+# relationship of salinity and pickleweed biomass
+# cor.test() calls for test for association between paired samples
+cor.test(
+  # dataset$variable 
+  salinity$salinity_mS_cm, salinity$pickleweed,
+         method = "pearson") # specifies to use Pearson correlation
 ```
 
+## d. Results communication
+
+\[To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Pearson correlation test. The test was used because both pickleweed biomass (g) and soil salinity (mS/cm) are continuous variables and can test the strength of the linear relationship of both uisng this test. The test showed a moderate relationship between soil salinity and biomass (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). This data would suggest that pickleweed biomass would tend to increase as soil salinity increases suggesting that higher salinity could support more growth in pickleweed plants. \]
