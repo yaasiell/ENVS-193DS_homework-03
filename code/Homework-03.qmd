@@ -127,4 +127,83 @@ cor.test( # "cor.test()" calls for test association between two variables
 )
 ```
 
-\[I ran a Spearmans Rank correlation test as non-paramtetric rank alternative compared to Pearsons correlation that evaluated the relationsip between pickleweed mass and soil salinity and showed a moderate relationship (Spearman $\rho = 0.59$, S = 824, p = 0.01, $\alpha = 0.05$) which was similar to the Pearson correlation results (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). Both tests would lead to the same decision about the null hypothesis that there is no relationship between both variables and shows the relationship that as pickleweed biomass increases as soil salinity increases.   \]
+\[I ran a Spearmans Rank correlation test as non-paramtetric rank alternative compared to Pearsons correlation that evaluated the relationsip between pickleweed mass and soil salinity and showed a moderate relationship (Spearman $\rho = 0.59$, S = 824, p = 0.01, $\alpha = 0.05$) which was similar to the Pearson correlation results (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). Both tests would lead to the same decision about the null hypothesis that there is no relationship between both variables and shows the relationship that as pickleweed biomass increases as soil salinity increases. \]
+
+# Problem 2. Personal Data
+
+## a. Updating your visualizations
+
+```{r}
+#| label: Updated commute data visualization
+# Visualizing Updated commute data visualization
+ggplot(data = my_data_commute, # calls for commute data frame
+       aes(x = day_of_week, # assigns day of week column to x-axis
+           y = commute_time_minutes, # assigns commute time to y-axis
+           color = time_of_day)) + # changes color depending on time of day
+  geom_point(size = 3) + # changes size of data points
+  facet_wrap(~ time_of_day) + # add legend for specific column
+  # labels for title
+  labs(title = "Commute Time Across Days of the Week: Afternoon vs. Morning",
+       x = "Day of the Week", # labels x-axis
+       y = "Commute Time (minutes)", # labels y-axis
+       color = "Time of Day") + # assings legends based on colored points
+  theme_minimal() # changes theme 
+
+```
+
+```{r}
+#| label: updated skateboard data visualization
+# Visualizing updated skateboard data
+my_data_skateboard_m <- my_data_skateboard |>
+  clean_names() |>
+  mutate(day_of_week = str_trim(day_of_week), # removes extra spaces from weekday names
+    day_of_week = factor(day_of_week, # changes day_of_week into an ordered factor
+      levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")))
+ggplot(data = my_data_skateboard_m,
+       aes(x = day_of_week, # assigns x-axis to weekday
+           y = skate_time_minutes, # assigns y-axis to skateboard time
+           color = day_of_week)) + # colors points and boxplots by weekday
+  geom_boxplot() +
+  geom_jitter(width = 0.15, # spreads points horizontally
+              height = 0, # keeps points at y value
+              alpha = 0.6, # makes points slightly transparent
+              size = 3) + # changes point size
+  scale_color_manual( # assign a unique color to each day value
+    values = c("Monday" = "green4", # assigning colors to values
+               "Tuesday" = "pink3",
+               "Wednesday" = "purple4",
+               "Thursday" = "blue2",
+               "Friday" = "goldenrod3")
+  ) +
+  labs( # calls for labels on graph
+    title = "Skate Time Across Days of the Week", # adds plot title
+    x = "Day of the Week", # labels x-axis
+    y = "Skate Time (minutes)", # labels y-axis with units
+    color = "Day of the Week" # labels legend
+  ) +
+  theme_classic() # uses a cleaner theme with less visual clutter
+```
+
+## b. Captions
+
+# Problem 3. Affective visualization
+
+## a. Describe in words what an affective visualization could look like for your personal data
+
+## b. Create a sketch (on paper) of your idea
+
+## c. Make a draft of your visualization.
+
+## d. Write an artist statement
+
+## e. Prep your materials to share to class.
+
+#Problem 4. Statistical critique
+
+## a. Revisit and summarize
+
+## b. Visual clarity
+
+## c. Aesthetic clarity
+
+## d. Recommendations
