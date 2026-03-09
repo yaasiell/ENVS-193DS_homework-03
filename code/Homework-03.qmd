@@ -186,6 +186,10 @@ ggplot(data = my_data_skateboard_m,
 
 ## b. Captions
 
+\[Figure 1. Commute Plot: Shows commute time from Oxnard to UCSB across the days of the week separated by the time of day (morning vs. afternoon). Morning commutes ranged from 60-90 minutes while the afternoon commutes varied more with one longer commute. This figure highlights how commute times could vary depending on both the day of the week and morning or afternoon departure time.
+
+Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus across weekdays. Each point is represented by an individual observation and each day has its own boxplot to represent the overall distribution of skate time between weekday. Skate time would vary greatly based on the day with a tighter cluster of points on friday and a larger spread of points on Monday. Wednesday being the most time skated of all weekdays.\] 
+
 # Problem 3. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
