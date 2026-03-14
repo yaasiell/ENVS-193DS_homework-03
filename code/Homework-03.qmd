@@ -143,8 +143,8 @@ cor.test( # "cor.test()" calls for test association between two variables
 # Visualizing Updated commute data visualization
 my_data_commute_m <- my_data_commute |>
   clean_names() |> # clean column names
-  mutate(day_of_week = str_trim(day_of_week),
-         day_of_week = factor(day_of_week,
+  mutate(day_of_week = str_trim(day_of_week), # removes extra spaces
+         day_of_week = factor(day_of_week, # orders days in logical order
                               levels = c("Monday","Tuesday","Wednesday","Thursday","Friday"))
                               )
 ggplot(data = my_data_commute_m, # calls for commute data frame
