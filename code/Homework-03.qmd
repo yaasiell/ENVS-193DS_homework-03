@@ -1,9 +1,14 @@
 ---
 title: "Homework-03"
 author: "Yaasiel Leos Ledesma"
-format: html
 editor: visual
 date: 2026-02-28 
+format:
+  html:
+    toc: true # use this to display table of contents
+execute: 
+  message: false # use this to make sure messages don't show up. 
+  warning: false # use this to make sure warning don't show up
 ---
 
 [GitHub Repository](https://github.com/yaasiell/ENVS-193DS_homework-03.git)
@@ -127,7 +132,7 @@ cor.test( # "cor.test()" calls for test association between two variables
 )
 ```
 
-\[I ran a Spearmans Rank correlation test as non-paramtetric rank alternative compared to Pearsons correlation that evaluated the relationsip between pickleweed mass and soil salinity and showed a moderate relationship (Spearman $\rho = 0.59$, S = 824, p = 0.01, $\alpha = 0.05$) which was similar to the Pearson correlation results (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). Both tests would lead to the same decision about the null hypothesis that there is no relationship between both variables and shows the relationship that as pickleweed biomass increases as soil salinity increases. \]
+\[I ran a Spearmans Rank correlation test as non-paramtetric rank alternative compared to Pearsons correlation that evaluated the relationsip between pickleweed mass and soil salinity and showed a moderate relationship (Spearman $\rho = 0.59$, S = 824, p = 0.01, $\alpha = 0.05$) which was similar to the Pearson correlation results (Pearson's r = 0.53, t(21) = 2.9, p =0.01, $\alpha = 0.05$). Both tests would lead to the same decision to reject the null hypothesis and shows the relationship that as pickleweed biomass increases as soil salinity increases. \]
 
 # Problem 2. Personal Data
 
@@ -136,7 +141,13 @@ cor.test( # "cor.test()" calls for test association between two variables
 ```{r}
 #| label: Updated commute data visualization
 # Visualizing Updated commute data visualization
-ggplot(data = my_data_commute, # calls for commute data frame
+my_data_commute_m <- my_data_commute |>
+  clean_names() |> # clean column names
+  mutate(day_of_week = str_trim(day_of_week),
+         day_of_week = factor(day_of_week,
+                              levels = c("Monday","Tuesday","Wednesday","Thursday","Friday"))
+                              )
+ggplot(data = my_data_commute_m, # calls for commute data frame
        aes(x = day_of_week, # assigns day of week column to x-axis
            y = commute_time_minutes, # assigns commute time to y-axis
            color = time_of_day)) + # changes color depending on time of day
@@ -198,11 +209,11 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 ## b. Create a sketch (on paper) of your idea
 
-![](images/personal_data_sketch.jpg){width=70%}
+![](images/personal_data_sketch.jpg){width="70%"}
 
 ## c. Make a draft of your visualization.
 
-![](images/affective_visualization_draft.jpg){width=70%}
+![](images/affective_visualization_draft.jpg){width="70%"}
 
 ## d. Write an artist statement
 
@@ -218,7 +229,7 @@ Figure 2. Skateboard Plot: Shows skateboard commute time (minutes) across campus
 
 \[The authors for this study used many different types of statistical tests such as the ANOVA/MANOVA, Fisher's F-test and the Krushkal-Wallis test to evaluate if different workout supplements and diet types had an effect on resistance training. The response variable measured in this study was the muscular strength in a one repetition maximum (kg). The predictor variable was the different supplement groups such as whey protein, creatine, L-cartinine, and a combination of all supplements, and a control group with no supplements. The figure included shows the results of the strenght gained and the different suppliment groups.\]
 
-![](images/statistical_critique_data.png){width=70%}
+![](images/statistical_critique_data.png){width="70%"}
 
 ## b. Visual clarity
 
